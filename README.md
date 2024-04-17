@@ -15,3 +15,9 @@ By Caroline Jung, Sandy Liu, Josie Ramirez, Tayae Rogers
 
 Note that the webdriver would constantly bring you back to the chrome browser interface, so you 
 probably want to not use your computer while running the code
+
+Account assignment:
+Sandy: aoc, ilhanmn, repwilson, sheilaforhouston,
+Caroline: kirstengillibrand, nikemawilliams, rashidatlaib, FRA1BS20247003597
+Tayae: repchrissyhoulahan, repkatieporter, repstansbury
+Josie: reppressley, repshontelbrown, repsummerlee
