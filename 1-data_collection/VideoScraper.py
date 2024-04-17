@@ -192,13 +192,14 @@ class VideoScraper():
             return None
 
 directory = 'raw_data'
+account = 'marieforcongress'
 
 def main():
-    with open('raw_data/marieforcongress.json', 'r') as f:
+    with open('raw_data/' + account + 'json', 'r') as f:
         json_data = json.load(f)
     url_list = [entry[0] for entry in json_data]
 
-    scraper = VideoScraper(url_list, 'output.json')
+    scraper = VideoScraper(url_list, '/comment_data/output_' + account + '.json')
     scraper.fetch_all_video_tiktok()
 
 main()
