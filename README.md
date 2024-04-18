@@ -18,6 +18,7 @@ probably want to not use your computer while running the code
 
 Account assignment:
 * Sandy: aoc, ilhanmn, repwilson, sheilaforhouston,
-* Caroline: kirstengillibrand, nikemawilliams, rashidatlaib, FRA1BS20247003597
+* Caroline: kirstengillibrand, nikemawilliams, rashidatlaib, teampattymurray
 * Tayae: repchrissyhoulahan, repkatieporter, repstansbury
 * Josie: reppressley, repshontelbrown, repsummerlee
+* Note: congresswomanjayapal is empty
