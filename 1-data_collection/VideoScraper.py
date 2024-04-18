@@ -196,7 +196,7 @@ directory = 'raw_data'
 account = 'kirstengillibrand'
 
 def main():
-    with open('raw_data/' + account + '.json', 'r') as f:
+    with open('raw_female/' + account + '.json', 'r') as f:
         json_data = json.load(f)
     url_list = [entry[0] for entry in json_data]
 
