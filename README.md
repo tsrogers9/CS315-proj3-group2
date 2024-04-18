@@ -17,7 +17,7 @@ Note that the webdriver would constantly bring you back to the chrome browser in
 probably want to not use your computer while running the code
 
 Account assignment:
-Sandy: aoc, ilhanmn, repwilson, sheilaforhouston,
-Caroline: kirstengillibrand, nikemawilliams, rashidatlaib, FRA1BS20247003597
-Tayae: repchrissyhoulahan, repkatieporter, repstansbury
-Josie: reppressley, repshontelbrown, repsummerlee
+* Sandy: aoc, ilhanmn, repwilson, sheilaforhouston,
+* Caroline: kirstengillibrand, nikemawilliams, rashidatlaib, FRA1BS20247003597
+* Tayae: repchrissyhoulahan, repkatieporter, repstansbury
+* Josie: reppressley, repshontelbrown, repsummerlee
