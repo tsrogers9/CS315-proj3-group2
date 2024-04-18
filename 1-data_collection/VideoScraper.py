@@ -68,10 +68,10 @@ class VideoScraper():
         # output_dic['comment_count'] = video_stats_list[1]
         # output_dic['saves'] = video_stats_list[2]
         # output_dic['shares'] = video_stats_list[3]
-        # output_dic['hashtags'] = self.get_hashtag()
+        output_dic['hashtags'] = self.get_hashtag()
         # output_dic['music'] = self.get_music()
         # output_dic['author'] = self.get_author()
-        # output_dic['description'] = self.get_description()
+        output_dic['description'] = self.get_description()
         self.scroll_to_bottom()
         output_dic['comments'] = self.get_comments()
         
@@ -154,12 +154,14 @@ class VideoScraper():
         
     def get_description(self):
         try:
-            description_element = self.chromebrowser.find_element(By.XPATH, ".//*[@class='css-j2a19r-SpanText efbd9f0']")
-            return description_element.text if description_element else None
+            description_element = self.chromebrowser.find_elements(By.XPATH, ".//*[@class='css-j2a19r-SpanText efbd9f0']")
+            if description_element:
+                return [description.text for description in description_element]
+            else:
+                return []
         except NoSuchElementException:
             print("Description element not found.")
             return None
-
 
     def scroll_to_bottom(self):
         scroll_time = 5
@@ -202,7 +204,10 @@ def main():
     scraper = VideoScraper(url_list, '/comment_data/output_' + account + '.json')
     scraper.fetch_all_video_tiktok()
 
-main()
+#main()
 
 ###testing###
 #test_url_list = ['https://www.tiktokv.com/share/video/7131051793299033390/', 'https://www.tiktokv.com/share/video/6995476685563104538/']
+
+scraper = VideoScraper(["https://www.tiktok.com/@aoc/video/7349960137148271902"], '/comment_data/output_TEST' + account + '.json')
+scraper.fetch_all_video_tiktok()
