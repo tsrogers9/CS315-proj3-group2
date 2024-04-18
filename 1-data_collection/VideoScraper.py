@@ -77,7 +77,6 @@ class VideoScraper():
         
         #where the comments are
         #comment_cont = self.chromebrowser.find_elements(By.XPATH, '//*[@class="css-13revos-DivCommentListContainer ekjxngi3"]')
-
         return output_dic
     
     def video_stats(self):
@@ -116,12 +115,12 @@ class VideoScraper():
             return -1
         
     def get_hashtag(self):
-        try:
-            expand_button = self.chromebrowser.find_elements(By.XPATH, './/*[@class="css-1r94cis-ButtonExpand e1mzilcj2"]')
-            if expand_button:
-                expand_button[0].click()
-        except NoSuchElementException:
-            pass
+        # try:
+        #     expand_button = self.chromebrowser.find_elements(By.XPATH, './/*[@class="css-1r94cis-ButtonExpand e1mzilcj2"]')
+        #     if expand_button:
+        #         expand_button[0].click()
+        # except NoSuchElementException:
+        #     pass
         try:
             hashtag_list = self.chromebrowser.find_elements(By.XPATH, './/*[@class="css-1p6dp51-StrongText ejg0rhn2"]')
             if hashtag_list == None:
@@ -194,20 +193,17 @@ class VideoScraper():
             return None
 
 directory = 'raw_data'
-account = 'marieforcongress'
+account = 'kirstengillibrand'
 
 def main():
-    with open('raw_data/' + account + 'json', 'r') as f:
+    with open('raw_data/' + account + '.json', 'r') as f:
         json_data = json.load(f)
     url_list = [entry[0] for entry in json_data]
 
     scraper = VideoScraper(url_list, '/comment_data/output_' + account + '.json')
     scraper.fetch_all_video_tiktok()
 
-#main()
+main()
 
 ###testing###
 #test_url_list = ['https://www.tiktokv.com/share/video/7131051793299033390/', 'https://www.tiktokv.com/share/video/6995476685563104538/']
-
-scraper = VideoScraper(["https://www.tiktok.com/@aoc/video/7349960137148271902"], '/comment_data/output_TEST' + account + '.json')
-scraper.fetch_all_video_tiktok()
