@@ -16,9 +16,38 @@ By Caroline Jung, Sandy Liu, Josie Ramirez, Tayae Rogers
 Note that the webdriver would constantly bring you back to the chrome browser interface, so you 
 probably want to not use your computer while running the code
 
-Account assignment:
+Female Account assignment:
 * Sandy: aoc, ilhanmn, repwilson, sheilaforhouston,
 * Caroline: kirstengillibrand, nikemawilliams, rashidatlaib, teampattymurray
 * Tayae: repchrissyhoulahan, repkatieporter, repstansbury
 * Josie: reppressley, repshontelbrown, repsummerlee
 * Note: congresswomanjayapal is empty
+
+Male Account Assignment:
+* Sandy: 
+corybooker
+johnfetterman
+jon
+bernie
+kevinmullinforcongress
+congressmancardenas
+* Caroline: 
+adamschiffca
+repmarktakano
+robertgarcia
+repmaxwellfrost
+troyc4congress
+repdeanphillips
+* Tayae: 
+benniegthompson
+stevenahorsford
+billpascrell
+repbowman
+wileynickel
+* Josie: 
+jeffjacksonnc
+greglandsmanoh
+colinallredtx
+repcasar
+repres.gerryconnolly
+repmarkpocan
