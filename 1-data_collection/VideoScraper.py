@@ -193,10 +193,10 @@ class VideoScraper():
             return None
 
 directory = 'raw_data'
-account = 'sheilaforhouston'
+account = 'congressmancardenas'
 
 def main():
-    with open('raw_female/' + account + '.json', 'r') as f:
+    with open('raw_male/' + account + '.json', 'r') as f:
         json_data = json.load(f)
     url_list = [entry[0] for entry in json_data]
 
