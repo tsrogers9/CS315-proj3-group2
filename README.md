@@ -31,6 +31,10 @@ jon
 bernie
 kevinmullinforcongress
 congressmancardenas
+added from Tayae's: 
+benniegthompson
+stevenahorsford
+billpascrell
 * Caroline: 
 adamschiffca
 repmarktakano
@@ -38,12 +42,11 @@ robertgarcia
 repmaxwellfrost
 troyc4congress
 repdeanphillips
-* Tayae: 
-benniegthompson
-stevenahorsford
-billpascrell
+added from Tayae's: 
 repbowman
 wileynickel
+* Tayae: 
+
 * Josie: 
 jeffjacksonnc
 greglandsmanoh
