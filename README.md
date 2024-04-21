@@ -32,7 +32,6 @@ bernie
 kevinmullinforcongress
 congressmancardenas
 added from Tayae's: 
-benniegthompson
 stevenahorsford
 billpascrell
 * Caroline: 
