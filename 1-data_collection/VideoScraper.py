@@ -193,7 +193,7 @@ class VideoScraper():
             return None
 
 directory = 'raw_data'
-account = 'congressmancardenas'
+account = 'repdeanphillips'
 
 def main():
     with open('raw_male/' + account + '.json', 'r') as f:
