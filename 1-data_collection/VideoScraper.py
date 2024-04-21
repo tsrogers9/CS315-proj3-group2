@@ -31,8 +31,8 @@ class VideoScraper():
         Open tiktok, access webpage
         """
         time_stamp = datetime.now().strftime('%m-%d_%H-%M')
-        output_file_name = f"output_file_{time_stamp}.json"
-        with open(output_file_name, 'w') as f:
+        output_file_name = f"output_{account}.json"
+        with open("output_male/" + output_file_name, 'w') as f:
             all_dics = []
             for i, video_url in enumerate(self.video_list):
                 print("Current video num:", i, " Current url:", video_url)
@@ -193,14 +193,14 @@ class VideoScraper():
             return None
 
 directory = 'raw_data'
-account = 'repdeanphillips'
+account = 'stevenahorsford'
 
 def main():
     with open('raw_male/' + account + '.json', 'r') as f:
         json_data = json.load(f)
     url_list = [entry[0] for entry in json_data]
 
-    scraper = VideoScraper(url_list, '/comment_data/output_' + account + '.json')
+    scraper = VideoScraper(url_list, f'/output_male/output_{account}' + account + '.json')
     scraper.fetch_all_video_tiktok()
 
 main()
