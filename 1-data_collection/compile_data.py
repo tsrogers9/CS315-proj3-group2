@@ -51,7 +51,7 @@ def combine_data(gender):
     data["description_list"] = cleaned
     data["comments"] = all_comments
 
-    data.to_csv(f"compiled_data/{name}.csv")
+    data.to_csv(f"compiled_data/{name}.csv", index=False)
     return data
 
 combine_data("M")
