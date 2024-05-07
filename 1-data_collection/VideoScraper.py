@@ -1,4 +1,4 @@
-## Author: Sandy Liu
+## Author: Sandy Liu (referenced a lot from previous the scraper we used in project1)
 ## Input: each file in 'raw_male/' and 'raw_female/'
 ## Output: all files in '/output_male/output_{account}' form, '/output_female/output_{account}'
 
@@ -183,7 +183,7 @@ class VideoScraper():
             print("Not able to scroll for 5 times.")
             return None
                 
-
+    #the section that we added for the purpose of this project
     def get_comments(self):
         all_comments = []
         try:
