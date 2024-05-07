@@ -44,7 +44,7 @@ repdeanphillips
 added from Tayae's: 
 repbowman
 wileynickel
-* Tayae: 
+* Tayae: (laptop broke)
 
 * Josie: 
 jeffjacksonnc
@@ -53,3 +53,18 @@ colinallredtx
 repcasar
 repres.gerryconnolly
 repmarkpocan
+
+## notable files in 1-data_collection folder
+* New TikTok Scraping.ipynb -- Collects video IDs for videos on a given user's page (this was run on each politician's page)
+* VideoScraper.py -- Collects metadata for each video in JSON with video links (this was run on every file in `raw_male/` and `raw_female/`)
+* compile_data.py -- Compiles data across from all files with video metadata into files gender (this was run on every file in `output_male/` and `output_female/`)
+
+## notable files in 2-analysis folder
+files in types-of-video-content:
+* gpt_categorization.ipynb -- Feeds video descriptions to GPT to categorize them (this was run on `M_all_vid_descriptions_2024_04_28.csv` and `F_all_vid_descriptions_2024_04_28.csv`)
+* gpt_categorization_analysis.ipynb -- Visualizes GPT categorization (this was run on `female_categories.csv` and `male_categories_may2.csv`)
+* gpt_manual_visualization.ipynb -- Visualizes the results of our manual check of GPT categorization
+
+files in stance-detection-comments:
+* stance_detection.ipynb -- Feeds comments to Perspective API to get mean attribute scores for comments on each video (this was run on every file in `output_male/` and `output_female/`)
+* stance_detection_analysis.ipynb -- Visualizes and models attribute scores by demographic characteristics (this was run on `female_data_scores.json` and `male_data_scores.json`)
