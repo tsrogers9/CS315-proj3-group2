@@ -1,3 +1,5 @@
+## Author: Sandy Liu
+
 from seleniumbase import Driver
 #from selenium import webdriver
 from selenium.webdriver.common.by import By # contains operators for the type of search we want to do
