@@ -1,4 +1,6 @@
 ## Author: Caroline Jung
+## Input: each file in `output_male/` and `output_female/`
+## Output: `compiled_data/female.csv` and `compiled_data/male.csv`
 
 import pandas as pd
 import os
