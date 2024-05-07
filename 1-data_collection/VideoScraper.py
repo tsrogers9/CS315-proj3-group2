@@ -1,4 +1,6 @@
 ## Author: Sandy Liu
+## Input: each file in 'raw_male/' and 'raw_female/'
+## Output: all files in '/output_male/output_{account}' form, '/output_female/output_{account}'
 
 from seleniumbase import Driver
 #from selenium import webdriver
